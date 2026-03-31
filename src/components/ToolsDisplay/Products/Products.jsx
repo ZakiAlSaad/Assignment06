@@ -1,15 +1,29 @@
+import React, { useContext } from "react"; // Added useContext import here
 import { FaCheck } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { CartContext } from "../../NavCart/CartContext";
 
 const Products = ({ product, addedToCart, setAddedToCart }) => {
   const { name, description, price, period, tag, features, icon } = product;
+  
+  // Pull addToCart from global context
   const { addToCart } = useContext(CartContext);
 
-  const handleAddedToCart = (currentCart) => {
-    if (!addedToCart.includes(currentCart)) {
-      setAddedToCart([...addedToCart, currentCart]);
-      toast.success(`${currentCart.name} is added to Cart`)
+  // Combined function to update both the local page cart AND the Nav cart
+  const handleBuyNow = () => {
+    // Check if it's already in the local cart to prevent duplicates
+    if (!addedToCart.includes(product)) {
+      // 1. Update the local page cart
+      setAddedToCart([...addedToCart, product]);
+      
+      // 2. Update the global Navbar cart
+      addToCart(product);
+      
+      // 3. Fire the toast notification
+      toast.success(`${name} is added to Cart`);
+    } else {
+      // Optional: Tell them it's already in the cart if they click twice
+      toast.info(`${name} is already in the Cart`);
     }
   };
 
@@ -50,9 +64,10 @@ const Products = ({ product, addedToCart, setAddedToCart }) => {
         })}
       </ul>
 
+      {/* Updated onClick to use our new combined function */}
       <button 
-        onClick={() => addToCart(product)} 
-        className="w-full bg-purple-600 text-white py-2 rounded-lg mt-4"
+        onClick={handleBuyNow} 
+        className="w-full bg-purple-600 text-white py-2 rounded-lg mt-4 font-medium hover:bg-purple-700 transition-colors"
       >
         Buy Now
       </button>
