@@ -51,7 +51,7 @@ The project focuses on building reusable UI components, structured data renderin
 * **Styling:** Tailwind CSS
 * **Build Tool:** Vite
 * **Icons:** React Icons
-* **Deployment:** Vercel
+* **Deployment:** Vercel & Netlify
 
 ---
 
