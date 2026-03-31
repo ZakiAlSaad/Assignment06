@@ -25,8 +25,8 @@ const Navbar = () => {
       {/* Right Side Actions */}
       <div className="flex items-center space-x-6">
         
-        {/* Cart Icon with Badge */}
-        <button aria-label="Cart" className="relative text-gray-700 hover:text-purple-600 transition-colors">
+        {/* Cart Icon with Badge - Now an anchor tag pointing to #cart */}
+        <a href="#cart" aria-label="Cart" className="relative text-gray-700 hover:text-purple-600 transition-colors cursor-pointer block">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" 
@@ -44,7 +44,7 @@ const Navbar = () => {
               {cartItems.length}
             </span>
           )}
-        </button>
+        </a>
 
         {/* Login Link */}
         <a href="#login" className="text-gray-700 font-medium hover:text-purple-600 transition-colors">

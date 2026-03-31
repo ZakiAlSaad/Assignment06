@@ -1,19 +1,25 @@
 import React, { createContext, useState } from 'react';
 
-// Create the context
 export const CartContext = createContext();
 
-// Create a provider component
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
-  // Function to add items to the cart
+  // Add item
   const addToCart = (product) => {
     setCartItems((prevItems) => [...prevItems, product]);
   };
 
+  // NEW: Remove item
+  const removeFromCart = (productToRemove) => {
+    setCartItems((prevItems) => 
+      prevItems.filter((item) => item.name !== productToRemove.name)
+    );
+  };
+
+  // Make sure to add removeFromCart to the value object!
   return (
-    <CartContext.Provider value={{ cartItems, addToCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );
