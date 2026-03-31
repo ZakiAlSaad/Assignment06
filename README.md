@@ -52,5 +52,5 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/digitools.git](https://github.com/yourusername/digitools.git)
-   cd digitools
+   git clone https://github.com/ZakiAlSaad/Assignment06.git
+   cd Assignment06
