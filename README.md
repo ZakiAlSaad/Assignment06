@@ -16,8 +16,12 @@
   </p>
 
   <h3>
-    🌐 <a href="https://assignment06.vercel.app/">View Live Site Here</a>
-  </h3>
+    Vercel--> <a href="https://assignment06.vercel.app/">Live Site Here</a>
+  </h4>
+ <h3>
+    Netlify--> <a href="https://programminghero-a06-zakialsaad.netlify.app/">Live Site Here</a>
+  </h4>
+  
 </div>
 
 <br />
