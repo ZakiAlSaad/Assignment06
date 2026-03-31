@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { toast } from "react-toastify";
-import { CartContext } from "../NavCart/CartContext"; // <-- Check this path!
+import { CartContext } from "../../NavCart/CartContext";
 
 const Cart = ({ product, addedToCart, setAddedToCart }) => {
   const { name, price, icon } = product;
