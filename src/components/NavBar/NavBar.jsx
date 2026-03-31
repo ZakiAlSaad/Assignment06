@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { CartContext } from './CartContext';
+import { CartContext } from "../NavCart/CartContext";
 
 const Navbar = () => {
   // Pull cartItems from global context
