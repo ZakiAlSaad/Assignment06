@@ -16,7 +16,7 @@
   </p>
 
   <h3>
-    🌐 <a href="vercel.app/">View Live Site Here</a>
+    🌐 <a href="https://assignment06.vercel.app/">View Live Site Here</a>
   </h3>
 </div>
 
@@ -57,5 +57,5 @@ To run this project locally on your machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone 
-   cd digitools
+   git clone https://github.com/ZakiAlSaad/Assignment06.git
+   cd Assignment06
