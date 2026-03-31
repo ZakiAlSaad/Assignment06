@@ -14,18 +14,29 @@ const Workflow = () => {
         </p>
 
         <div className="flex gap-5 items-center flex-wrap justify-center">
-          <div className="bg-white rounded-full btn py-7 px-8">
-            <button
+          
+          {/* Changed to an <a> tag pointing to the tools section */}
+          <a 
+            href="#tools-section" 
+            className="bg-white rounded-full btn py-7 px-8 cursor-pointer inline-flex items-center justify-center"
+          >
+            <span
               className="w-full font-semibold 
                bg-linear-to-r from-[#4F39F6] to-[#9514FA] 
                bg-clip-text text-transparent"
             >
               Explore Products
-            </button>
-          </div>
-          <button className="btn rounded-full py-7 px-8 font-semibold border text-white hover:bg-white hover:text-black border-gray-300 bg-transparent ">
+            </span>
+          </a>
+
+          {/* Changed to an <a> tag pointing to the pricing section */}
+          <a 
+            href="#pricing-section"
+            className="btn rounded-full py-7 px-8 font-semibold border text-white hover:bg-white hover:text-black border-gray-300 bg-transparent inline-flex items-center justify-center cursor-pointer"
+          >
             View Pricing
-          </button>
+          </a>
+          
         </div>
         <p>14-day free trial • No credit card required • Cancel anytime</p>
       </div>

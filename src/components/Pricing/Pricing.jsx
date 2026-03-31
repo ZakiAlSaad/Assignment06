@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <section className="common-w mx-auto">
+    <section id="pricing-section" className="common-w mx-auto">
       <div className="container mx-auto px-2 my-50">
         <header className="text-center space-y-3 mb-10">
           <h1 className="text-5xl font-extrabold">
@@ -18,7 +18,7 @@ const Pricing = () => {
               <p className="mt-1 text-[#627382]">Perfect for getting started</p>
 
               <div className="mt-8 mb-10">
-                <span className="text-5xl font-bold">$0</span>
+                <span className="text-5xl font-bold">$2</span>
                 <span className="text-xl text-[#627382]">/Month</span>
               </div>
 
@@ -42,8 +42,8 @@ const Pricing = () => {
             </div>
 
             <div className="mt-auto pt-8 pb-2">
-              <button className="btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold py-6">
-                Get Started Free
+              <button className="btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold py-6 cursor-pointer">
+                Get Started
               </button>
             </div>
           </div>
@@ -91,8 +91,8 @@ const Pricing = () => {
             </div>
 
             <div className="mt-auto pt-8 pb-2">
-              <div className="btn py-6 rounded-full w-full bg-white">
-                <button className="bg-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-semibold">
+              <div className="btn py-6 rounded-full w-full bg-white cursor-pointer hover:shadow-lg transition-shadow">
+                <button className="bg-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-semibold w-full cursor-pointer">
                   Start Pro Trial
                 </button>
               </div>
@@ -138,8 +138,8 @@ const Pricing = () => {
             </div>
 
             <div className="mt-auto pt-8 pb-2">
-              <button className="btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold py-6">
-                Get Started Free
+              <button className="btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold py-6 cursor-pointer">
+                Get Started Now
               </button>
             </div>
           </div>
