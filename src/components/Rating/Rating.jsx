@@ -13,7 +13,7 @@ const Rating = () => {
         <hr className="md:hidden text-gray-400 w-[50%] mx-auto" />
 
         <div className="text-center space-y-2">
-          <h1 className="text-3xl md:text-6xl font-bold">200+</h1>
+          <h1 className="text-3xl md:text-6xl font-bold">300+</h1>
           <p className="md:text-2xl">Premium Tools</p>
         </div>
 
