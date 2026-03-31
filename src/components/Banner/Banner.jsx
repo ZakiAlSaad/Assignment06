@@ -18,17 +18,23 @@ const Banner = () => {
           software—all in one place. Start creating faster today. Explore
           Products
         </p>
-        <div className="space-x-2 md:space-y-0 space-y-1.5">
-          <button className="btn bg-linear-to-r to-[#9514FA] from-[#4F39F6] rounded-full p-6 text-white font-semibold">
+        <div className="space-x-2 md:space-y-0 space-y-1.5 flex flex-wrap md:justify-start justify-center gap-y-2">
+          
+          {/* Changed this button to an anchor tag pointing to #tools-section */}
+          <a 
+            href="#tools-section" 
+            className="btn bg-linear-to-r to-[#9514FA] from-[#4F39F6] rounded-full p-6 text-white font-semibold inline-flex items-center justify-center cursor-pointer"
+          >
             Explore Products
-          </button>
+          </a>
+
           <button className="btn rounded-full p-6 font-semibold border-[#4F39F6] text-[#4F39F6]">
             <FaPlay className="text-[20px] font-bold" /> Watch Demo
           </button>
         </div>
       </div>
 
-      <img src={banner} alt="" />
+      <img src={banner} alt="Banner" />
     </section>
   );
 };
